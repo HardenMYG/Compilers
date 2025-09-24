@@ -36,3 +36,13 @@ int main()
 //LLVM：llc main.ll -o main-llvm.S
 //x86：gcc main.i -S -o main-x86.S
 //arm：arm-linux-gnueabihf-gcc main.i -S -o main-arm.S
+
+//汇编
+//gcc main-x86.S -c -o main-x86.o
+//arm-linux-gnueabihf-gcc main-arm.S -o main-arm.o
+//llc main.bc -filetype=obj -o main-llvm.o
+
+//反汇编
+//objdump -D main-x86.o
+
+//链接器
